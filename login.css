@@ -1,0 +1,330 @@
+body{
+    background-image: url(Img/AnimatedBckgrndLogIn.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 99%;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template: 4% 96%/1fr ;
+}
+
+.navBar{
+    display: flex;
+    grid-row: 1;
+    width: 100%;
+    height: 75px;
+    justify-content: right;
+}
+
+.navBar img{
+    display: flex;
+    height: 100%;
+}
+
+#checkbox {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    height: 100px;
+    justify-self: center;
+    margin-top: 100px;
+    margin-right: 650px;
+    
+}
+
+.GreyCont{
+    position: absolute;
+    z-index: 0;
+    grid-row: 2;
+    width: 60%;
+    height: 65%;
+    margin-left: 22.5%;
+    margin-top: 2%;
+    align-self: center;
+    background-color: rgba(25, 221, 123, 0.82);
+    border-radius: 10px;
+    display: grid;
+    grid-template: 1fr/70% 30% ;
+    border: 2px solid rgba(12, 149, 87, 0.807);
+}
+.InfoCont{
+    display: flex;
+    grid-column: 1;
+    width: 95%;
+    height: 80%;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+    align-content: center;
+    background-color: rgba(0, 96, 19, 0.786);
+    border-radius: 20px;
+}
+
+.InfoCont button {
+    align-self: center;
+    width: 80px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border-style: none;
+    font-weight: bold;
+    color: rgba(2, 97, 21, 0.915);
+    background-color: rgba(246, 246, 246, 0.563);
+}
+
+.InfoCont input {
+   color: rgb(0, 68, 14);
+   font-family: Arial, Helvetica, sans-serif;
+}
+#Bienvenida {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    justify-self: center;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.25;
+    margin-top: 10%;
+    font-weight: 650;
+    align-self: center;
+    border-radius: 5px;
+    width: 80%;
+}
+ #Bienvenida2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 600;
+    align-self: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 65%;
+    margin-top: -0px;
+ } 
+ #CorreoLogin{
+    display: flex;
+    height: 20px;
+    grid-column: 1;
+    width: 70%;
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.452);
+    border-style: none;
+    border-radius: 3px;
+ }
+
+ #TextForm { 
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    align-content: last baseline;
+    height: 20px;
+    align-self: center;
+ }
+
+ #Correo {
+    background-color: rgb(231, 231, 231);
+ }
+
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    grid-row: 3/5;
+}
+
+ #contraLabel {
+    grid-column: 1;
+    grid-row: 4;
+    display: flex;
+    align-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    align-content: last baseline;
+    height: 20px;
+    margin-top: 5px;
+   
+    
+ }
+
+ #contra {
+    display: flex;
+    height: 20px;
+    grid-column: 1;
+    width: 70%;
+    justify-self: left;
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.452);
+    border-style: none;
+    border-radius: 3px;
+ }
+
+ #registroLogIn { 
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    width: 95%;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    justify-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 96, 19);
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.872);
+    border-radius: 10px;
+    font-size: small;
+    border: 2px solid rgba(12, 149, 87, 0.807);
+ }
+
+ #registroLogIn a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);;;
+    border-radius: 2px;
+    align-self: center;
+ }
+
+ #registroLogIn img {
+    align-self: center;
+    justify-self: center;
+    height: 100px;
+ }
+
+
+ #linkRegistro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 96, 19);
+    width: 80px;
+    border-radius: 5px;
+    height: 20px;
+ }
+
+@media (max-width: 1200px) and (landscape){
+   #checkbox {
+      height: 75px;
+      margin-top: 120px;
+      margin-left: 180px;
+
+   }
+}
+ @media (max-width: 1000px) and (orientation: portrait) {
+   #checkbox {
+      display: none;
+   }
+   .GreyCont{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 500px;
+   }
+   .InfoCont {
+      height: 300px;
+   }
+   body {
+      height: 1100px;
+   }
+}
+
+@media (max-width: 900px) or (max-height: 550px){
+
+   #checkbox {
+      height: 65px;
+      margin-left: 200px;
+      margin-top: 160px;
+   }
+   #TextForm { 
+      height: 10px;
+   }
+   #CorreoLogin{
+      display: flex;
+      width: 50%;
+   }
+   #contraLabel {
+      height: 10px;  
+   }
+
+   #contra {
+      display: flex;
+      width: 50%;
+   }
+  
+   #registroLogIn img{
+      height: 50px;
+   }
+   #Bienvenida {
+      font-size: 16px;
+   }
+
+   #Bienvenida2 {
+      font-size: 13px;
+   }
+
+   .InfoCont{
+     height: 250px;
+   }
+   .GreyCont{
+      min-height: 300px;
+   }
+}
+@media (max-width: 750px) {
+   #checkbox {
+      height: 50px;
+      margin-right: 400px;
+      margin-top: 70px;
+   }
+   .InfoCont {
+      height: 250px;
+   }
+   .GreyCont {
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+   }
+   #registroLogIn{
+      height: 150px;
+   }
+}
+@media (max-width: 500px) {
+   #Bienvenida {
+      font-size: x-small;
+   }
+   #Bienvenida2 {
+      font-size: x-small;
+   }
+   #checkbox {
+      display: none;
+   }
+   body {
+      height: 500px;
+      grid-template:20% 80%/1fr ;
+   }
+   .GreyCont{
+      justify-content: space-around;
+      height: 100px;
+      font-size: x-small;
+   }
+   .InfoCont{
+      height: 200px;
+   }
+   #registroLogIn{
+      height: 60px;
+      font-size: x-small;
+   }
+   #registroLogIn img{
+      display: none;
+   }
+}
+
+
+
+
+ 
+
+
+

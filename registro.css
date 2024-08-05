@@ -1,0 +1,184 @@
+body {
+    background-image: url(Img/AnimatedBckgrndLogIn.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 99%;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template: 25% 50% 25%/ 25% 50% 25%;
+
+}
+
+#registroCont {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    grid-row: 2;
+    border: 1px solid red;
+    height: 80%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(0, 96, 19, 0.786);
+    border: 2px solid rgba(25, 221, 123, 0.82);
+    position: relative;
+    z-index: 0;
+}
+
+#logoCheck {
+    display: flex;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    margin-right: -31.35rem;
+    margin-top: -9.375rem;
+}
+
+#smallCont {
+    border: 2px solid rgba(0, 96, 19, 0.786);
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    background-color: rgba(214, 239, 227, 0.498);
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgba(0, 70, 14, 0.786);
+}
+
+#smallCont a {
+    color:  rgba(0, 70, 14, 0.786);
+}
+
+#smallCont input{
+    border-radius: 3px;
+    border-style: none;
+}
+
+#smallCont button {
+    border-style: none;
+    border-radius: 3px;
+    background-color:rgba(0, 96, 19, 0.493) ;
+    height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(212, 248, 221, 0.82);
+}
+
+#navBar {
+    display: flex;
+    grid-row: 1;
+    grid-column: 1 / 4;
+    justify-content: right;
+}
+#Checklist {
+    display: flex;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    margin-left: -500px;
+    margin-bottom: -130px;
+}
+
+@media (max-width: 1200px){
+    #navBar img{
+        height: 115px;
+    }
+    #logoCheck {
+        height: 85px;
+        margin-right: -400px;
+        margin-top: -150px;
+    }
+    #Checklist {
+        display: flex;
+        height: 85px;
+        position: absolute;
+        z-index: 1;
+        margin-left: -400px;
+        margin-bottom: -130px;
+    }
+}
+
+@media (max-width: 900px){
+    #navBar img{
+        height: 100px;
+    }
+    #logoCheck {
+        height: 75px;
+        margin-right: -275px;
+        margin-top: -150px;
+    }
+    #Checklist {
+        display: flex;
+        height: 45px;
+        position: absolute;
+        z-index: 1;
+        margin-left: -275px;
+        margin-bottom: -180px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #navBar img{
+        height: 75px;
+    }
+
+    #logoCheck {
+        display: flex;
+        height: 50px;
+        margin-right: -200px;
+        margin-top: -150px;
+    }
+
+    #Checklist {
+        display: flex;
+        height: 50px;
+        position: absolute;
+        z-index: 1;
+        margin-left: -200px;
+        margin-bottom: -130px;
+    }
+}
+
+@media (max-width:500px ) and (orientation: portrait) {
+    #smallCont input {
+        width: 120px;
+    }
+    #smallCont {
+        font-size: small;
+    }
+    #Checklist{
+        height: 40px;
+        margin-left: -150px;
+        margin-top: 50px;
+    }
+    #logoCheck{
+        height: 40px;
+        margin-right: -170px;
+        margin-top: -170px
+    }
+}
+
+@media (max-width:350px ) and (orientation: portrait) {
+    #smallCont {
+        font-size: x-small;
+    }
+    #smallCont a{
+        font-size: x-small;
+    }
+    #smallCont input {
+        width: 100px;
+    }
+    #Checklist {
+        margin-left: -110px;
+    }
+    #logoCheck {
+        height: 45px;
+        margin-left: -70px;
+        margin-top: -170px;
+    }
+}
